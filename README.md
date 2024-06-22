@@ -64,3 +64,11 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+Solución al problema con [components.layouts.app] --> vayan a vendor/livewire/livewire/config/livewire.php y editan la linea 41:
+
+
+'layout' => 'components.layouts.app',
+```por la siguiente:
+'layout' => 'layouts.app',
+# forum-laravel-11
