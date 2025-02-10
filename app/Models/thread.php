@@ -9,6 +9,12 @@ class thread extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'category_id',
+        'title',
+        'body'
+    ];
+
     public function user()
     {
         return $this->belongsTo(User::class);
